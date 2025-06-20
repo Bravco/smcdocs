@@ -2,7 +2,7 @@
     <UPage>
         <template #left>
             <UPageAside>
-                <UContentNavigation :navigation="navigation"/>
+                <UContentNavigation :navigation="navigation" type="multiple" highlight/>
             </UPageAside>
         </template>
 

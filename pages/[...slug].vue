@@ -2,7 +2,9 @@
     <UPage>
         <template #left>
             <UPageAside>
-                <UContentNavigation :navigation="navigation" type="multiple" highlight/>
+                <UContentSearchButton :collapsed="false"/>
+                <USeparator class="h-8"/>
+                <UContentNavigation :navigation="navigation" highlight/>
             </UPageAside>
         </template>
 
@@ -31,7 +33,7 @@
     );
 
     const { data: surround } = await useAsyncData(`${route.path}-surround`, () => 
-        queryCollectionItemSurroundings("content", route.path)
+        queryCollectionItemSurroundings("content", route.path).order("title", "ASC")
     );
 
     if (!page.value) {

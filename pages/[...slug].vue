@@ -4,7 +4,9 @@
             <UPageAside>
                 <UContentSearchButton :collapsed="false"/>
                 <USeparator class="h-8"/>
-                <UContentNavigation :navigation="navigation" highlight/>
+                <UContentNavigation :navigation="navigation" highlight>
+                    
+                </UContentNavigation>
             </UPageAside>
         </template>
 

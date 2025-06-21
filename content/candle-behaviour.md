@@ -3,7 +3,14 @@ title: "Candle Behaviour"
 description: "How candlesticks form."
 ---
 
-- OHLC/OLHC
-- AMD/Po3
+## Open High Low Close (OHLC / OLHC)
 
-Coming soon...
+### OLHC
+![Open Low High Close](/images/content/olhc.png)
+
+### OHLC
+![Open High Low Close](/images/content/ohlc.png)
+
+## Power of 3 (AMD)
+
+![Power of 3](/images/content/amd.png)

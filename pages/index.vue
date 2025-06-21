@@ -75,7 +75,8 @@
                 width: 240,
                 height: 135
             },
-            orientation: "horizontal" as const
+            orientation: "horizontal" as const,
+            
         },
         {
             title: "Strategy Creation",

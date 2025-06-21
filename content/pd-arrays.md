@@ -3,9 +3,22 @@ title: "Premium & Discount Arrays"
 description: "Trading confluences."
 ---
 
-- Premium & Discount, EQ
-- FVG
-- IFVG
-- BPR
+## Premium & Discount
 
-Coming soon...
+![Premium & Discount](/images/content/premium-discount.png)
+
+### Good vs Bad Premium & Discount
+
+![Good vs Bad Premium & Discount](/images/content/premium-discount-comparison.png)
+
+## Fair Value Gap (FVG)
+
+![Fair Value Gap](/images/content/fvg.png)
+
+## Inverse Fair Value Gap (IFVG)
+
+![Inverse Fair Value Gap](/images/content/ifvg.png)
+
+## Balanced Price Range (BPR)
+
+![Balanced Price Range](/images/content/bpr.png)

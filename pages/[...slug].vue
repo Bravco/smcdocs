@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
-        <UPageAside class="lg:col-span-2">
+        <aside class="hidden overflow-y-auto lg:block lg:max-h-[calc(100vh-var(--ui-header-height))] lg:sticky lg:top-(--ui-header-height) py-8 lg:ps-4 lg:-ms-4 lg:pe-6.5 lg:col-span-2">
             <UContentSearchButton :collapsed="false"/>
             <USeparator class="h-8"/>
             <UNavigationMenu :items="items" orientation="vertical" color="neutral" highlight/>
-        </UPageAside>
+        </aside>
 
         <div class="lg:col-span-6">
             <div v-if="page" class="border-b border-default py-8">

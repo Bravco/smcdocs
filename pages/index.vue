@@ -41,7 +41,7 @@
                                     <p class="text-[15px] text-pretty text-toned mt-1">{{ card.description }}</p>
                                 </div>
                             </div>
-                            <ClientOnly>
+                            <ClientOnly v-if="!colorMode?.forced">
                                 <NuxtImg
                                     v-if="card.image"
                                     :src="`${card.image.path}-${colorMode.value}.svg`"

@@ -3,12 +3,12 @@
         <UPageAside class="lg:col-span-2">
             <UContentSearchButton :collapsed="false"/>
             <USeparator class="h-8"/>
-            <UContentNavigation :navigation="navigation" highlight/>
+            <UNavigationMenu :items="items" orientation="vertical" color="neutral" highlight/>
         </UPageAside>
 
         <div class="lg:col-span-6">
             <div v-if="page" class="border-b border-default py-8">
-                <span class="mb-2.5 text-sm font-semibold text-primary flex items-center gap-1.5">headline</span>
+                <span class="mb-2.5 text-sm font-semibold text-primary flex items-center gap-1.5"></span>
                 <h1 class="text-3xl sm:text-4xl text-pretty font-bold text-highlighted">{{ page?.title }}</h1>
                 <p class="text-lg text-pretty text-muted mt-4">{{ page?.description }}</p>
             </div>
@@ -38,7 +38,13 @@
             </div>
         </div>
 
-        <UContentToc class="lg:col-span-2 order-first lg:order-last" :links="page?.body.toc?.links"/>
+        <UContentToc
+            v-if="page?.body?.toc?.links?.length"
+            :links="page.body.toc.links"
+            color="neutral"
+            highlight
+            class="lg:col-span-2 order-first lg:order-last"
+        />
     </div>
 </template>
 
@@ -47,6 +53,11 @@
 
     const route = useRoute();
     const navigation = inject<Ref<ContentNavigationItem[]>>("navigation");
+
+    const items = computed<NavigationMenuItem[]>(() => navigation.value.map(({ path, title }) => ({
+        label: title,
+        to: path
+    })));
 
     const { data: page } = await useAsyncData(route.path, () =>
         queryCollection("content").path(route.path).first()

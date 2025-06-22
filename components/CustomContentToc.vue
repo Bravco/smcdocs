@@ -5,6 +5,7 @@ import { reactivePick, createReusableTemplate } from "@vueuse/core";
 import { useRouter, useAppConfig } from "#imports";
 import theme from "~/utils/contentTocTheme";
 import { tv } from "tailwind-variants";
+
 const props = defineProps({
   as: { type: null, required: false, default: "nav" },
   trailingIcon: { type: String, required: false },

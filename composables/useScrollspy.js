@@ -1,4 +1,5 @@
 import { ref, watch, onBeforeMount, onBeforeUnmount } from "vue";
+
 export function useScrollspy() {
   const observer = ref();
   const visibleHeadings = ref([]);

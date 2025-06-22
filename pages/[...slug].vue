@@ -14,7 +14,7 @@
             <div class="mt-8 pb-24 space-y-12">
                 <ContentRenderer v-if="page" :value="page"/>
                 <USeparator/>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div v-if="surround" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <NuxtLink v-if="surround[0]" :to="surround[0].path" class="group block px-6 py-8 rounded-lg border border-default hover:bg-elevated/50 focus-visible:outline-primary transition-colors">
                         <div class="inline-flex items-center rounded-full p-1.5 bg-elevated group-hover:bg-primary/10 ring ring-accented mb-4 group-hover:ring-primary/50 transition">
                             <UIcon name="i-lucide-arrow-left" class="size-5 shrink-0 text-highlighted group-hover:text-primary transition-[color,translate] group-active:-translate-x-0.5"/>
@@ -49,14 +49,17 @@
 
 <script setup lang="ts">
     import type { ContentNavigationItem } from "@nuxt/content";
+    import type { NavigationMenuItem } from "@nuxt/ui";
 
     const route = useRoute();
     const navigation = inject<Ref<ContentNavigationItem[]>>("navigation");
 
-    const items = computed<NavigationMenuItem[]>(() => navigation.value.map(({ path, title }) => ({
-        label: title,
-        to: path
-    })));
+    const items = computed<NavigationMenuItem[]>(() => 
+        navigation?.value.map(({ path, title }) => ({
+            label: title,
+            to: path
+        })) ?? []
+    );
 
     const { data: page } = await useAsyncData(route.path, () =>
         queryCollection("content").path(route.path).first()

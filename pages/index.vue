@@ -3,7 +3,7 @@
         <section>
             <UContainer class="flex flex-col lg:grid py-24 sm:py-32 lg:py-40 gap-16 sm:gap-y-24">
                 <div class="text-center">
-                    <UBadge icon="i-lucide-rocket" label="For Free" variant="soft" color="neutral"/>
+                    <UBadge icon="i-lucide-rocket" label="For Free" variant="subtle" color="neutral"/>
                     <h1 class="text-5xl sm:text-7xl text-pretty tracking-tight font-bold text-highlighted"><span class="text-primary">Smart Money Concepts</span> Docs</h1>
                     <p class="text-lg sm:text-xl/8 text-muted text-balance mt-6">Stop trading like the dumb money — start thinking like the smart money.</p>
                     <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 justify-center">

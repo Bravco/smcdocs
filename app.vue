@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
     const { data: navigation } = await useAsyncData("navigation", () => 
-        queryCollectionNavigation("content").order("title", "ASC")
+        queryCollection("content").select("title", "path", "description").order("title", "ASC").all()
     );
     
     provide("navigation", navigation);

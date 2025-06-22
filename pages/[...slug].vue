@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
         <aside class="hidden overflow-y-auto lg:block lg:max-h-[calc(100vh-var(--ui-header-height))] lg:sticky lg:top-(--ui-header-height) py-8 lg:ps-4 lg:-ms-4 lg:pe-6.5 lg:col-span-2">
-            <UNavigationMenu :items="items" orientation="vertical" color="neutral" highlight/>
+            <UNavigationMenu :items="items" orientation="vertical" color="neutral"/>
         </aside>
 
         <div class="lg:col-span-6">

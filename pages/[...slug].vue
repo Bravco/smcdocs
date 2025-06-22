@@ -1,8 +1,6 @@
 <template>
     <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
         <aside class="hidden overflow-y-auto lg:block lg:max-h-[calc(100vh-var(--ui-header-height))] lg:sticky lg:top-(--ui-header-height) py-8 lg:ps-4 lg:-ms-4 lg:pe-6.5 lg:col-span-2">
-            <UContentSearchButton :collapsed="false"/>
-            <USeparator class="h-8"/>
             <UNavigationMenu :items="items" orientation="vertical" color="neutral" highlight/>
         </aside>
 
@@ -38,9 +36,10 @@
             </div>
         </div>
 
-        <UContentToc
+        <CustomContentToc
             v-if="page?.body?.toc?.links?.length"
             :links="page.body.toc.links"
+            title="On this page"
             color="neutral"
             highlight
             class="lg:col-span-2 order-first lg:order-last"

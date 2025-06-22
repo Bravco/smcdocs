@@ -5,6 +5,7 @@
             color="neutral"
             variant="ghost"
             @click="isDark = !isDark"
+            aria-label="Color Mode Button"
         />
 
         <template #fallback>

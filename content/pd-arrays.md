@@ -1,6 +1,6 @@
 ---
 title: "Premium & Discount Arrays"
-description: "Trading confluences."
+description: "Selling in premium and buying in discount."
 ---
 
 ## Premium & Discount

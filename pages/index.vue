@@ -5,7 +5,7 @@
                 <div class="text-center">
                     <UBadge icon="i-lucide-rocket" label="For Free" variant="subtle" color="neutral"/>
                     <h1 class="text-5xl sm:text-7xl text-pretty tracking-tight font-bold text-highlighted"><span class="text-primary">Smart Money Concepts</span> Docs</h1>
-                    <p class="text-lg sm:text-xl/8 text-muted text-balance mt-6">Stop trading like the dumb money — start thinking like the smart money.</p>
+                    <p class="text-lg sm:text-xl/8 text-muted text-balance mt-6">Stop trading like the <strong>dumb money</strong> — start thinking like the <strong>smart money</strong>.</p>
                     <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 justify-center">
                         <UButton to="/candle-behaviour" label="Get started" icon="i-lucide-wand-sparkles"/>
                         <UButton to="/#about" label="Learn more" trailingIcon="i-lucide-arrow-right" variant="subtle" color="neutral"/>

@@ -2,7 +2,8 @@
     <div>
       <header class="bg-default/75 backdrop-blur border-b border-default h-(--ui-header-height) sticky top-0 z-50">
         <nav class="max-w-(--ui-container) h-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
-          <NuxtLink to="/" class="lg:flex-1">
+          <NuxtLink to="/" class="lg:flex-1 flex items-center gap-1.5 hover:[&>span]:text-neutral-950 dark:hover:[&>span]:text-neutral-50">
+            <UIcon name="i-lucide-candlestick-chart" class="size-5 text-primary transition-colors"/>
             <h1 class="text-xl font-bold text-highlighted text-nowrap"><span class="text-primary">SMC</span> Docs</h1>
           </NuxtLink>
 

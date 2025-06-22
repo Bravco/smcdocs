@@ -35,10 +35,11 @@
 
       <main class="min-h-[calc(100vh-var(--ui-header-height))] relative">
         <svg
+          v-if="route.path === '/'"
           viewBox="0 0 1440 181"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="pointer-events-none absolute w-full -top-px transition-all text-primary shrink-0 -z-10 duration-[400ms]"
+          class="pointer-events-none absolute w-full inset-0 -top-px transition-all text-primary shrink-0 -z-10 duration-[400ms]"
         >
           <mask id="path-1-inside-1_414_5526" fill="white">
             <path d="M0 0H1440V181H0V0Z"></path>

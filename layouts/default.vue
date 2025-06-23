@@ -7,7 +7,7 @@
             <h1 class="text-xl font-bold text-highlighted text-nowrap"><span class="text-primary">SMC</span> Docs</h1>
           </NuxtLink>
 
-          <UNavigationMenu class="w-full justify-center hidden lg:flex" :items="items" variant="link"/>
+          <UNavigationMenu class="w-full justify-center hidden lg:flex lg:flex-1" :items="items" variant="link"/>
           
           <div class="flex items-center justify-end lg:flex-1 gap-1.5">
             <ColorModeButton/>

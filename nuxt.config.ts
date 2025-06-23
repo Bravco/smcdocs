@@ -8,7 +8,17 @@ export default defineNuxtConfig({
       title: "SMC Docs",
       htmlAttrs: {
         lang: "en"
-      }
+      },
+      meta: [
+        {
+          name: "title",
+          content: "Smart Money Concepts Docs - SMC Docs"
+        },
+        {
+          name: "description",
+          content: "Stop trading like the dumb money — start thinking like the smart money."
+        }
+      ]
     }
   }
 })

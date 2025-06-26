@@ -74,9 +74,26 @@
 </template>
 
 <script lang="ts" setup>
+    interface Card {
+        title: string;
+        description: string;
+        icon: {
+            name: string;
+            color: string;
+        };
+        class?: string;
+        image?: {
+            path: string;
+            width: number;
+            height: number;
+        };
+        orientation?: "horizontal";
+        reverse?: boolean;
+    }
+
     const colorMode = useColorMode();
 
-    const cards = ref([
+    const cards = ref<Card[]>([
         {
             title: "Liquidity",
             description: "Market movement is driven by liquidity and nothing else.",

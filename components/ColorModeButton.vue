@@ -17,7 +17,7 @@
 <script setup lang="ts">
     const colorMode = useColorMode();
 
-    const isDark = computed({
+    const isDark = computed<boolean>({
         get() {
             return colorMode.value === "dark";
         },

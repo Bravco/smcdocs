@@ -10,6 +10,14 @@
           <UNavigationMenu class="w-full justify-center hidden lg:flex lg:flex-1" :items="items" variant="link"/>
           
           <div class="flex items-center justify-end lg:flex-1 gap-1.5">
+            <UButton
+              icon="i-simple-icons:x"
+              color="neutral"
+              variant="ghost"
+              to="https://x.com/sheldontrading"
+              target="_blank"
+              aria-label="Twitter"
+            />
             <ColorModeButton/>
             <USlideover v-model:open="open">
               <UButton :icon="open ? 'i-lucide-x' : 'i-lucide-menu'" variant="ghost" color="neutral" class="lg:hidden -me-1.5"/>
@@ -20,6 +28,14 @@
                     <h1 class="text-xl font-bold text-highlighted"><span class="text-primary">SMC</span> Docs</h1>
                   </NuxtLink>
                   <div>
+                    <UButton
+                      icon="i-simple-icons:x"
+                      color="neutral"
+                      variant="ghost"
+                      to="https://x.com/sheldontrading"
+                      target="_blank"
+                      aria-label="Twitter"
+                    />
                     <ColorModeButton/>
                     <UButton @click="open = false" icon="i-lucide-x" variant="ghost" color="neutral"/>
                   </div>
@@ -65,8 +81,18 @@
       </main>
 
       <USeparator/>
-      <footer class="py-8">
-        <p class="text-center text-sm text-muted">Copyright &copy; 2025 | All Rights Reserved.</p>
+      <footer>
+        <UContainer class="flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-4 py-4">
+          <p class="text-center text-sm text-muted lg:order-0 order-1">Copyright &copy; 2025 | All Rights Reserved.</p>
+          <UButton
+            icon="i-simple-icons:x"
+            color="neutral"
+            variant="ghost"
+            to="https://x.com/sheldontrading"
+            target="_blank"
+            aria-label="Twitter"
+          />
+        </UContainer>
       </footer>
     </div>
 </template>

@@ -20,6 +20,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.51"
+    "@iconify-json/lucide": "^1.2.51",
+    "@iconify-json/simple-icons": "^1.2.41"
   }
 }

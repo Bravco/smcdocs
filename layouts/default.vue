@@ -51,6 +51,7 @@
       </header>
 
       <main class="min-h-[calc(100vh-var(--ui-header-height))] relative">
+        <div class="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(var(--ui-border)_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <svg
           v-if="route.path === '/'"
           viewBox="0 0 1440 181"
@@ -102,6 +103,7 @@
   import type { NavigationMenuItem } from "@nuxt/ui";
 
   const route = useRoute();
+  const colorMode = useColorMode();
 
   const navigation = inject<Ref<ContentNavigationItem[]>>("navigation");
 

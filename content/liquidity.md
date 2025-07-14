@@ -18,17 +18,17 @@ Big players use this liquidity to fill large positions by taking the opposite si
 
 As a result, markets often reverse at these levels.
 
-![Liquidity](/images/content/liquidity/liquidity.png)
+![Liquidity](/images/content/liquidity/liquidity.webp)
 
 A **Draw on Liquidity (DOL)** is the current liquidity pool towards which the market is headed.
 
-![Why market moves](/images/content/liquidity/why-market-moves.png)
+![Why market moves](/images/content/liquidity/why-market-moves.webp)
 
 ## Time-based Liquidity
 
 **Session-based liquidity** is defined by the high and low of a trading session (Asia, London, or New York).
 
-![Sessions](/images/content/liquidity/sessions.png)
+![Sessions](/images/content/liquidity/sessions.webp)
 
 ## Low & High Resistance Liquidity Run
 
@@ -36,7 +36,7 @@ A **Draw on Liquidity (DOL)** is the current liquidity pool towards which the ma
 
 When price struggles to sweep liquidity, it leaves many untapped pools, creating more liquidity and setting up a stronger future draw that price can break through easily.
 
-![Low Resistance Liquidity](/images/content/liquidity/lrlr.png)
+![Low Resistance Liquidity](/images/content/liquidity/lrlr.webp)
 
 ### High Resistance Liquidity
 
@@ -44,4 +44,4 @@ A **Failure Swing** defines a high-resistance liquidity.
 
 It occurs when price fails to close above swept liquidity and then begins to reverse, creating a **Protected High / Low**.
 
-![High Resistance Liquidity](/images/content/liquidity/hrlr.png)
+![High Resistance Liquidity](/images/content/liquidity/hrlr.webp)

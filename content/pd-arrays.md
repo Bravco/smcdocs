@@ -11,13 +11,13 @@ As traders, we aim to buy at a discount and sell (short) at a premium.
 
 The **Equilibrium**, marked at the **0.5** level of a price range, can also serve as a confluence for potential trade entries.
 
-![Premium & Discount](/images/content/pd-arrays/premium-discount.png)
+![Premium & Discount](/images/content/pd-arrays/premium-discount.webp)
 
 ### Good vs Bad Premium & Discount
 
 To mark out **Premium & Discount**, we first identify the [Swing High](/market-structure#swing-high-and-low) and [Swing Low](/market-structure#swing-high-and-low) that define the most recent price range.
 
-![Good vs Bad Premium & Discount](/images/content/pd-arrays/premium-discount-comparison.png)
+![Good vs Bad Premium & Discount](/images/content/pd-arrays/premium-discount-comparison.webp)
 
 ## Fair Value Gap (FVG)
 
@@ -29,7 +29,7 @@ Usually, price tends to return to this areas to fill the orders before continuin
 
 > Offering fair value to the uninvolved traders.
 
-![Fair Value Gap](/images/content/pd-arrays/fvg.png)
+![Fair Value Gap](/images/content/pd-arrays/fvg.webp)
 
 ## Inverse Fair Value Gap (IFVG)
 
@@ -37,7 +37,7 @@ An **Inverse Fair Value Gap (IFVG)** occurs when price closes beyond a previous 
 
 Afterward, it often acts as a support or resistance level in the opposite direction.
 
-![Inverse Fair Value Gap](/images/content/pd-arrays/ifvg.png)
+![Inverse Fair Value Gap](/images/content/pd-arrays/ifvg.webp)
 
 ## Balanced Price Range (BPR)
 
@@ -45,4 +45,4 @@ A **Balanced Price Range (BPR)** combines a **Fair Value Gap** and an **Inverse 
 
 It’s the overlapping zone where an **Inverse Fair Value Gap** formed, followed by a **Fair Value Gap** in the opposite direction.
 
-![Balanced Price Range](/images/content/pd-arrays/bpr.png)
+![Balanced Price Range](/images/content/pd-arrays/bpr.webp)

@@ -7,7 +7,7 @@ No matter your win rate, the odds of losing 10 trades in a row are higher than y
 
 Proper risk management is the only way to avoid liquidating your account.
 
-![Probability of losing X trades in a row](/images/content/risk-management/probability.png)
+![Probability of losing X trades in a row](/images/content/risk-management/probability.webp)
 
 Profitability is simply a net positive relationship between win rate and risk-to-reward ratio (RR).
 

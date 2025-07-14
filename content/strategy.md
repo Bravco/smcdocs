@@ -23,8 +23,8 @@ The more confluences you stack, the higher the probability.
 
 ### Examples
 
-![Strategy Example 1](/images/content/strategy/example1.png)
+![Strategy Example 1](/images/content/strategy/example1.webp)
 
-![Strategy Example 2](/images/content/strategy/example2.png)
+![Strategy Example 2](/images/content/strategy/example2.webp)
 
-![Strategy Example 3](/images/content/strategy/example3.png)
+![Strategy Example 3](/images/content/strategy/example3.webp)
